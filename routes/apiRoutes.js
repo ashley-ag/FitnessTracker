@@ -1,10 +1,10 @@
 const db = require("../models/");
 
 module.exports = (app) => {
-  //   app.get("/api/tables", (req, res) => res.json(tableData));
+  app.get("/api/tables", (req, res) => res.json(tableData));
 
   app.get("/api/workouts", (req, res) => {
-    // res.json(db.Workout.findAll());
+    res.json(db.Workout.findAll());
     Workout.find()
       .then((data) => {
         res.json(data);
