@@ -9,7 +9,7 @@ const WorkoutSchema = new Schema({
     required: "Date is required",
   },
 
-  exercise: [
+  exercises: [
     {
       type: {
         type: String,
